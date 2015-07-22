@@ -21,16 +21,33 @@ body, html{
 		max-height: 10em;
 		z-index: 999;
 		box-shadow: rgba(0, 0, 0, .21) 0 0 15px;
+		overflow: hidden;
+		
+		.author{
+			color: #2196F3;
+			text-transform: lowercase;
+		}
+		
+		.text{
+			background: #263238;
+			color: white;
+			border-radius: 3px;
+			padding: .3em;
+			margin: .3em 0 .3em 0;
+		}
 		
 		.close-btn{
-			background: blue;
-			border-radius: 3px 0;
 			cursor: pointer;
 			position: absolute;
 			right: 0;
 			bottom: 0;
-			color: white;
-			padding: .3em;
+			color: rgba(255, 255, 255, .87);
+			padding: .7em 1em .7em 1em;
+			background: red;
+			
+			&:hover{
+				opacity: 0.7;
+			}
 		}
 	
 	}
