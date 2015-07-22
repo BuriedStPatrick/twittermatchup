@@ -1,0 +1,14 @@
+{
+  "name": "twittermatch",
+  "version": "1.0.0",
+  "description": "Match two with tweets",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Patrick Christensen",
+  "license": "ISC",
+  "devDependencies": {
+    "less": "^2.5.1"
+  }
+}

@@ -1,0 +1,110 @@
+body, html{
+	margin: 0;
+	background: #673AB7;
+	font-family: 'Josefin Sans', sans-serif;
+	cursor: default;
+}
+
+.twittermatch-app{
+	
+	.opentweet{
+		position: fixed;
+		padding: 2em;
+		margin: auto;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: white;
+		border-radius: 5px;
+		max-width: 30em;
+		max-height: 10em;
+		z-index: 999;
+		box-shadow: rgba(0, 0, 0, .21) 0 0 15px;
+		
+		.close-btn{
+			background: blue;
+			border-radius: 3px 0;
+			cursor: pointer;
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			color: white;
+			padding: .3em;
+		}
+	
+	}
+	
+	.topbar{
+		position: absolute;
+		margin: auto;
+		width: 100%;
+		background: #2196F3;
+		color: white;
+		z-index: 999;
+		box-shadow: rgba(0, 0, 0, .21) 0 0 15px;
+		position: fixed;
+		top: 0;
+		
+		.topcontent{
+			position: relative;
+			max-width: 512px;
+			margin-left: auto;
+			margin-right: auto;
+			text-align: center;
+		}
+	}
+	
+	.content{
+		margin-top: 128px;
+		width: 100%;
+		
+		.grid{
+			background: white;
+			border-radius: 2px;
+			box-shadow: rgba(0, 0, 0, .21) 0 0 15px;
+			padding: 1em;
+			margin: auto;
+			max-width: 690px;
+			height: 100%;
+		}
+		
+		.grid {
+			.tile{
+				width: 5em;
+				height: 5em;
+				margin: 1em;
+				border-radius: 5px;
+				display: inline-block;
+				color: white;
+				padding: 0;
+				font-weight: bold;
+				box-shadow: rgba(0, 0, 0, .71) 0 0 3px;
+				border: 2px solid white;
+				cursor: pointer;
+				&:hover{
+					opacity: .7;
+				}
+				.symbol{
+					font-size: 3em;
+					width: 100%;
+					text-align: center;
+					margin-top: auto;
+					position: relative;
+				}
+				
+				&.red{
+					background: red;
+				}
+				
+				&.blue{
+					background: blue;
+				}
+				
+				&.green{
+					background: green;
+				}
+			}
+		}
+	}
+}
